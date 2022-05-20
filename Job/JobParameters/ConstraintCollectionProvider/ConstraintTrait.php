@@ -4,7 +4,7 @@ namespace Snowio\Bundle\CsvConnectorBundle\Job\JobParameters\ConstraintCollectio
 
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Uuid;
-use Akeneo\Pim\Enrichment\Component\Product\Validator\Constraints\WritableDirectory;
+use Akeneo\Tool\Component\StorageUtils\Validator\Constraints\WritableDirectory;
 use Symfony\Component\Validator\Constraints\Regex;
 use Symfony\Component\Validator\Constraints\Collection;
 
