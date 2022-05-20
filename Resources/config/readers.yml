@@ -1,0 +1,7 @@
+parameters:
+  snowio_connector.reader.database.product.class: Snowio\Bundle\CsvConnectorBundle\Reader\Database\ProductModelReader
+
+services:
+  snowio_connector.reader.database.product_model:
+    class: "%snowio_connector.reader.database.product.class%"
+    parent: pim_connector.reader.database.product_model

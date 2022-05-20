@@ -1,0 +1,45 @@
+{
+  "name": "snowio/akeneo5-snow-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cristian Quiroz",
+      "email": "cq@amp.co"
+    }, {
+      "name": "Nei Santos",
+      "email": "ns@amp.co"
+    }, {
+      "name": "Liam Toohey",
+      "email": "lt@amp.co"
+    },
+    {
+      "name": "A Hill",
+      "email": "ah@amp.co"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/akeneo/pim-community-dev.git",
+      "branch": "master"
+    }
+  ],
+  "require": {
+    "akeneo/pim-community-dev": "5.*.*",
+    "guzzlehttp/guzzle": "^6.5",
+    "symfony/config": "^4.4.4",
+    "symfony/dependency-injection": "^4.4.4",
+    "symfony/http-kernel": "^4.4.4",
+    "phpspec/phpspec": "^6.1.1"
+  },
+  "scripts": {
+    "test": "php vendor/bin/phpspec run --format=dot -c phpspec.yml",
+    "cs": "phpcs --standard=PSR2 -n ./ --ignore=vendor --report=summary"
+  },
+  "autoload": {
+    "psr-4": {
+      "Snowio\\Bundle\\CsvConnectorBundle\\": ""
+    }
+  },
+  "minimum-stability": "dev"
+}
